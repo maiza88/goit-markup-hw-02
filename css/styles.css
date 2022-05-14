@@ -1,0 +1,124 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --white-color-with-transparency: rgba(255, 255, 255, 0.6);
+    --primary-bg-color: #FFFFFF;
+    --title-bg-color: #2F303A;
+    --other-title-bg-color: #F5F4FA;
+}
+
+/* колір основного тексту #757575 */
+/* колір вторинного тексту #212121 */
+/* білий #FFFFFF */
+/* чорний #000000 */
+/* акцент #2196F3 */
+/* білий з прозорістю rgba(255, 255, 255, 0.6) */
+/* основний колір фону #FFFFFF; */
+/* вторинний колір фону1 #2F303A */
+/* вторинний колір фону2 #F5F4FA */
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+.list {
+    list-style: none;
+}
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.logo-first-part {
+    color: var(--accent-color);
+}
+
+.logo-second-part {
+    color: var(--black-color);
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--title-bg-color);
+}
+.hero-title {
+    color: var(--white-color);  
+}
+
+
+/* Features */
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+
+/* Work */
+
+.work-title {
+    color: var(--title-text-color);
+}
+
+
+/* Team */
+
+.team {
+    background-color: var(--other-title-bg-color);
+}
+.team-title {
+     color: var(--title-text-color);
+}
+.team-list .title {
+    color: var(--title-text-color);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--title-bg-color);
+}
+.footer-logo-1 {
+    color: var(--accent-color);
+}
+
+.footer-logo-2 {
+    color: var(--white-color);
+}
+
+.address {
+    color: var(--white-color);
+}
+.footer-address .link {
+    color: var(--white-color-with-transparency);
+}
+
+.footer-address .link:hover,
+.footer-address .link:focus {
+    color: var(--accent-color);
+}
+/* Button */
+
+.button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
