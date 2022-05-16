@@ -9,6 +9,7 @@
   --title-bg-color: #2f303a;
   --other-title-bg-color: #f5f4fa;
   --button-hover-color: #188ce8;
+  --button-secondary-color: #f5f4fa;
 }
 
 body {
@@ -200,4 +201,44 @@ footer {
 .footer-address .link:hover,
 .list .link:focus {
   color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.project-list .name {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-list .description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.filter .button-primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.filter .button-secondary {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.filter .button-primary:hover,
+.filter .button-primary:focus {
+  background-color: var(--button-hover-color);
 }
