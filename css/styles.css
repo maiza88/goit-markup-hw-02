@@ -1,13 +1,13 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --secondary-title-text-color: #ffffff;
+  --tertiary-title-text-color: #000000;
+  --footer-title-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --white-color-with-transparency: rgba(255, 255, 255, 0.6);
   --primary-bg-color: #ffffff;
   --title-bg-color: #2f303a;
-  --other-title-bg-color: #f5f4fa;
+  --team-title-bg-color: #f5f4fa;
   --button-hover-color: #188ce8;
   --button-secondary-color: #f5f4fa;
 }
@@ -23,13 +23,17 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .list {
   list-style: none;
 }
 
 /* Logo */
 
-.header-logo-1 {
+.header-logo-first {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -37,12 +41,8 @@ a {
   line-height: 1.19;
 }
 
-.header-logo-2 {
-  color: var(--black-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.header-logo-second {
+  color: var(--tertiary-title-text-color);
 }
 
 /* Navigation */
@@ -83,7 +83,7 @@ a {
 }
 
 .hero-title {
-  color: var(--white-color);
+  color: var(--secondary-title-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -95,7 +95,7 @@ a {
 /* Button */
 
 .button {
-  color: var(--white-color);
+  color: var(--secondary-title-text-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -138,7 +138,7 @@ a {
 /* Team */
 
 .team {
-  background-color: var(--other-title-bg-color);
+  background-color: var(--team-title-bg-color);
 }
 
 .team-title {
@@ -159,7 +159,7 @@ a {
 .team-list .position {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2px;
+  line-height: 1.2;
 }
 
 /* Footer */
@@ -168,7 +168,7 @@ footer {
   background-color: var(--title-bg-color);
 }
 
-.footer-logo-1 {
+.footer-logo-first {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -176,23 +176,19 @@ footer {
   line-height: 1.19;
 }
 
-.footer-logo-2 {
-  color: var(--white-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.footer-logo-second {
+  color: var(--secondary-title-text-color);
 }
 
 .address {
-  color: var(--white-color);
+  color: var(--secondary-title-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 
 .footer-address .link {
-  color: var(--white-color-with-transparency);
+  color: var(--footer-title-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -221,12 +217,13 @@ footer {
 }
 
 .filter .button-primary {
-  color: var(--white-color);
+  color: var(--secondary-title-text-color);
   background-color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  font-family: inherit;
 }
 
 .filter .button-secondary {
@@ -236,6 +233,7 @@ footer {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  font-family: inherit;
 }
 
 .filter .button-primary:hover,
